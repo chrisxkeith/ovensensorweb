@@ -3,7 +3,7 @@ Assumes you have set up the virtual environment with mkvirtualenv (http://virtua
 
 Switch path separators if on Mac/Linux.
 
-- cd Documents\GitHub\ovensensor2
+- cd Documents\GitHub\ovensensorweb
 - workon ovensensorproject
 - python manage.py runserver
 
