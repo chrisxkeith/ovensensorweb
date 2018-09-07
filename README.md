@@ -3,13 +3,14 @@
 
 Assumes:
 - You are using CMD.EXE. Switch path separator if on Mac/Linux.
-- You have python, django and npm installed.
+- You have git, python, django and npm installed.
 - You are starting in your home directory (e.g,. C:\Users\\*you*).
 
 Install Steps:
 - cd Documents
 - mkdir Github
-- git clone *this repository*
+- cd Github
+- git clone https://github.com/chrisxkeith/ovensensorweb.git
 - cd ovensensorweb\ovensensorapp\static\ovensensorapp
 - npm install chart.js --save
 - cd ..\\..\\..\
