@@ -14,13 +14,20 @@ var myChart = new Chart(ctx, {
     	"datasets" :
     		[
     			{ "label" : "thermistor2-test Thermistor 02 sensor:",
+//				   "borderColor" : window.chartColors.red,
+
     				"data" : [
     { "t" : "2018/07/06 14:30:00", "y" : 73}
     ,{ "t" : "2018/07/06 14:32:00", "y" : 73}
     				]
+    			},
+    			{ "label" : "thermistor3-test Thermistor 02 sensor:",
+    				"data" : [
+    { "t" : "2018/07/06 14:30:00", "y" : 70}
+    ,{ "t" : "2018/07/06 14:32:00", "y" : 70}
+    				]
     			}
-    		]
-    	
+    		]    	
     },
     options: {
 		responsive: false,
