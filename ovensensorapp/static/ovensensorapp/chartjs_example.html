@@ -8,44 +8,58 @@
 <canvas id="myChart" width="600" height="300"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-    	"datasets" :
-    		[
-    			{ "label" : "thermistor2-test Thermistor 02 sensor:",
-//				   "borderColor" : window.chartColors.red,
+	var myChart = new Chart(ctx, {
+		type : 'line',
+		data : {
+			"datasets" : [ {
+				"label" : "thermistor2-test Thermistor 02 sensor:",
+				"borderColor" : "rgba(255,99,132,1)",
+				"backgroundColor" : "rgba(0, 0, 0, 0.0)",
 
-    				"data" : [
-    { "t" : "2018/07/06 14:30:00", "y" : 73}
-    ,{ "t" : "2018/07/06 14:32:00", "y" : 73}
-    				]
-    			},
-    			{ "label" : "thermistor3-test Thermistor 02 sensor:",
-    				"data" : [
-    { "t" : "2018/07/06 14:30:00", "y" : 70}
-    ,{ "t" : "2018/07/06 14:32:00", "y" : 70}
-    				]
-    			}
-    		]    	
-    },
-    options: {
-		responsive: false,
-		animation: {
-            duration: 0
-        },
-        scales: {
-        	xAxes: [{
-        		 type: 'time'
-        	}],
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
-});
+				/*
+				"rgba(255, 206, 86, 1)",
+				"rgba(75, 192, 192, 1)",
+				"rgba(153, 102, 255, 1)",
+				"rgba(255, 159, 64, 1)"
+				 */
+
+				"data" : [ {
+					"t" : "2018/07/06 14:30:00",
+					"y" : 73
+				}, {
+					"t" : "2018/07/06 14:32:00",
+					"y" : 73
+				} ]
+			}, {
+				"label" : "thermistor3-test Thermistor 02 sensor:",
+				"borderColor" : "rgba(54, 162, 235, 1)",
+				"backgroundColor" : "rgba(0, 0, 0, 0.0)",
+				"data" : [ {
+					"t" : "2018/07/06 14:30:00",
+					"y" : 70
+				}, {
+					"t" : "2018/07/06 14:32:00",
+					"y" : 70
+				} ]
+			} ]
+		},
+		options : {
+			responsive : false,
+			animation : {
+				duration : 0
+			},
+			scales : {
+				xAxes : [ {
+					type : 'time'
+				} ],
+				yAxes : [ {
+					ticks : {
+						beginAtZero : true
+					}
+				} ]
+			}
+		}
+	});
 </script>
 
 </body>
